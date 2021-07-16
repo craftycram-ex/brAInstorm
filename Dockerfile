@@ -21,7 +21,7 @@ COPY . .
 RUN npm run build
 
 # Network / reverse proxy config
-LABEL traefik.http.routers.brainstorm.rule="Host(`brainstorm.ds.ava.hfg.design`)"
+LABEL traefik.http.routers.brainstormopenai.rule="Host(`brainstormopenai.ds.ava.hfg.design`)"
 
 EXPOSE 8080
 CMD [ "http-server", "build" ]
